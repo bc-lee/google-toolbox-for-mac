@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'GeometryUtils' do |sp|
-    sp.source_files = 'Foundation/GTMGeometryUtils.{h,m}'
+    sp.source_files = 'Sources/Foundation/GeometryUtils/Public/Foundation/GTMGeometryUtils.h', 'Sources/Foundation/GeometryUtils/GTMGeometryUtils.m'
     sp.frameworks = 'CoreGraphics'
     sp.dependency 'GoogleToolboxForMac/Defines', "#{s.version}"
   end

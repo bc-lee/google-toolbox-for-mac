@@ -9,21 +9,10 @@ objc_library(
     visibility = ["//visibility:public"],
 )
 
-objc_library(
+alias(
     name = "GeometryUtils",
-    srcs = [
-        "GTMGeometryUtils.m",
-    ],
-    hdrs = [
-        "GTMGeometryUtils.h",
-    ],
-    sdk_frameworks = [
-        "CoreGraphics",
-    ],
+    actual = "//Sources/Foundation/GeometryUtils:GeometryUtils",
     visibility = ["//visibility:public"],
-    deps = [
-        "//:Defines",
-    ],
 )
 
 objc_library(
